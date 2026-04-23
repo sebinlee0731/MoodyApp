@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- 상단 텍스트 -->
+            <TextView
+                android:id="@+id/textEmotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 기분은?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- 감정 선택 버튼들 -->
+            <LinearLayout
+                android:id="@+id/emotionLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/emotion_happy"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/happy"
+                    android:background="@null"
+                    android:contentDescription="행복" />
+
+                <ImageButton
+                    android:id="@+id/emotion_calm"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/calm"
+                    android:background="@null"
+                    android:contentDescription="차분" />
+
+                <ImageButton
+                    android:id="@+id/emotion_okay"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/okay"
+                    android:background="@null"
+                    android:contentDescription="보통" />
+
+                <ImageButton
+                    android:id="@+id/emotion_sad"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/sad"
+                    android:background="@null"
+                    android:contentDescription="슬픔" />
+
+                <ImageButton
+                    android:id="@+id/emotion_stressed"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/stressed"
+                    android:background="@null"
+                    android:contentDescription="스트레스" />
+            </LinearLayout>
+
+            <!-- 추천 버튼들 -->
+            <LinearLayout
+                android:id="@+id/recommendButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/button_place"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#CED4DA"
+                    android:text="장소 추천"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button_music"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CED4DA"
+                    android:text="음악 추천"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

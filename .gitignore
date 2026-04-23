@@ -1,0 +1,11 @@
+# Android
+MoodyApp/.gradle/
+MoodyApp/build/
+MoodyApp/local.properties
+MoodyApp/*.iml
+MoodyApp/.idea/
+
+# Server
+moodyserver/node_modules/
+moodyserver/.env
+moodyserver/*.log
