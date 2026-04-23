@@ -9,3 +9,5 @@ MoodyApp/.idea/
 moodyserver/node_modules/
 moodyserver/.env
 moodyserver/*.log
+.DS_Store
+moodyserver/.git
